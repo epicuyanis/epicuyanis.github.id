@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+<h1 style="text-align: center;">Selamat Datang di GEOMETRY MATH OPERATOR</h1>    
+<h2 style="text-align: center;">Aplikasi Web penghitung luas bangun 2D dan 3D</h2>
+
+<h3 style="color: rgb(45, 6, 63); font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align: center;">
+    klick Tombol Tombol di bawah ini untuk mencari nilai luas Bangun Datar (2D) anda </h3>
+<br>
+<button style="border-radius: 50%; height: 95px; width: 95px;" onclick="luasSegitiga()">Luas segitiga</button>
+<br><br>
+<button style="border-radius: 50%; height: 95px; width: 95px;" onclick="luasPersegi()">Luas Persegi</button>
+<br><br>
+<button style="border-radius: 50%; height: 95px; width: 95px;" onclick="luasLingkaran()">Luas lingkaran</button>
+
+    <script>
+        //penghitung luas segitiga
+        function triangle (alas, tinggi) {
+            return alas * tinggi / 2
+        }
+
+        function luasSegitiga () {
+            let a = prompt('berapa alasnya dalam cm ? ')
+            let b = prompt('berapa tingginya dalam cm ? ')
+            let c = triangle(a,b)
+            alert('luas segitiganya adalah ' + c + ' cm');
+        }
+
+        //penghitung luas persegi/ persegi panjang
+        function square (panjang, tinggi) {
+            return panjang * tinggi
+        }
+
+        function luasPersegi () {
+            let x = prompt('berapa panjangnya dalam cm ? ')
+            let y = prompt('berapa tingginya dalam cm ? ')
+            let z = square (x,y)
+            alert('luas perseginya adalah ' + z + ' cm');
+        }
+
+        //penghitung luas lingkaran 
+        function round (jarijari) {
+            return 3.14 * jarijari * jarijari
+        }
+
+        function luasLingkaran () {
+            let l = prompt('berapa panjang jari jarinya dalam cm ? ')
+            let L = round(l)
+            alert('luas lingkarannya adalah ' +  L + ' cm');
+        }
+    </script>
+</body>
+</html>
